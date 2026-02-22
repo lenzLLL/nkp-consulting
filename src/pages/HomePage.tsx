@@ -144,7 +144,7 @@ export function HomePage() {
   return (
     <main className="w-full">
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="relative h-screen md:min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[100svh] md:min-h-screen flex items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
           <img
