@@ -41,7 +41,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-x-hidden ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-white py-4'}`}>
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-white py-4'}`}>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -92,9 +92,8 @@ export function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen &&
-      <div className="md:hidden absolute inset-x-0 top-full bg-white border-t border-gray-100 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="px-0 pt-2 pb-6 space-y-2">
+      <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+          <div className="px-4 pt-2 pb-6 space-y-2">
             {navLinks.map((link) =>
           <Link
             key={link.path}
@@ -111,7 +110,6 @@ export function Navbar() {
             </div>
           </div>
         </div>
-      </div>
       }
     </nav>);
 

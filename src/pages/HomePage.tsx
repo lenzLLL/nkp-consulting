@@ -411,12 +411,7 @@ export function HomePage() {
                 <div className="text-sm text-blue-100">Années d'expérience</div>
               </div>
               {/* Second floating badge */}
-              <div className="absolute -top-4 -right-4 bg-white text-nkp-dark p-4 rounded-2xl shadow-xl border border-gray-100">
-                <div className="text-2xl font-bold font-heading text-nkp-blue">
-                  500+
-                </div>
-                <div className="text-xs text-gray-500">Étudiants formés</div>
-              </div>
+          
             </motion.div>
           </div>
         </div>
