@@ -639,7 +639,7 @@ export function ServicesPage() {
             <Link to="/contact">
               <Button
                 size="lg"
-                className="bg-white text-nkp-blue hover:bg-gray-100">
+                className="bg-blue-500 text-nkp-blue ">
 
                 Nous contacter
               </Button>
