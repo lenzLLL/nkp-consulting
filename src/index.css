@@ -20,3 +20,14 @@
     text-wrap: balance;
   }
 }
+
+/* Reduce base font-size on small screens for more compact mobile view */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  /* Slightly reduce heading sizes on very small screens */
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.125rem; }
+}

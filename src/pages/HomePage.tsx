@@ -465,7 +465,7 @@ export function HomePage() {
                     <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-100 group-hover:-translate-y-1">
                       {/* Card header with gradient */}
                       <div
-                        className={`bg-gradient-to-r ${svc.color} p-6 flex items-center justify-between`}>
+                        className={`bg-gradient-to-r ${svc.color} p-4 flex items-center justify-between`}>
 
                         <div className="flex items-center gap-4">
                           <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
@@ -483,25 +483,14 @@ export function HomePage() {
                         <ChevronRight className="h-5 w-5 text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all" />
                       </div>
 
-                      {/* Card body */}
-                      <div className="p-6">
-                        <p className="text-gray-600 text-sm mb-5 leading-relaxed">
+                      {/* Card body (compact) */}
+                      <div className="p-4">
+                        <p className="text-gray-600 text-sm mb-2 leading-relaxed">
                           {svc.desc}
                         </p>
-                        <ul className="space-y-2">
-                          {svc.items.map((item) =>
-                          <li
-                            key={item}
-                            className="flex items-center gap-2 text-sm text-gray-700">
-
-                              <span className="w-1.5 h-1.5 rounded-full bg-nkp-blue flex-shrink-0" />
-                              {item}
-                            </li>
-                          )}
-                        </ul>
-                        <div className="mt-5 pt-4 border-t border-gray-100">
+                        <div className="mt-2">
                           <span className="text-nkp-blue text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                            Voir tous les détails{' '}
+                            Voir tous les détails
                             <ArrowRight className="h-4 w-4" />
                           </span>
                         </div>
